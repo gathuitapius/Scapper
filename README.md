@@ -31,7 +31,7 @@ A Flask application that scrapes car listings from Jiji Kenya, stores them in a 
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/gathuitapius/Scraper.git
-cd car-scraper-viewer
+cd Scraper
 ```
 
 ### 2. Install Dependencies
