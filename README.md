@@ -1,6 +1,3 @@
-Here's the README formatted with proper Markdown syntax for GitHub:
-
-```markdown
 # Car Scraper & Viewer
 
 A Flask application that scrapes car listings from Jiji Kenya, stores them in a MySQL database, and displays them on a web interface. The application provides an interface for viewing all car listings, filtering based on price, and viewing individual car details.
