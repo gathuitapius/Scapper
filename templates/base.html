@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car Details</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+            .price {
+                font-weight: 700;
+                color: rgb(5, 98, 67);
+            }
+            .name {
+                font-weight: 500;
+            }
+             .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 40px;
+                height: 80vh;
+             }
+
+             .item-info{
+                border: 1.9px solid rgb(233, 227, 222);
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+                height: 80%;
+                width: 80%;
+             }
+
+             .item-meta{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px;
+                align-items: start;
+             }
+
+             .title{
+                text-align: center;
+                text-decoration: underline;
+                font-weight: bolder;
+                margin-top: 20px;
+             }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
+
+

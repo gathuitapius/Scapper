@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car Details</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+            .price {
+                font-weight: 700;
+                color: rgb(5, 98, 67);
+            }
+            .name {
+                font-weight: 500;
+            }
+             .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 40px;
+                height: 80vh;
+             }
+
+             .item-info{
+                border: 1.9px solid rgb(233, 227, 222);
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+                height: 80%;
+                width: 80%;
+             }
+
+             .item-meta{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px;
+                align-items: start;
+             }
+
+             .title{
+                text-align: center;
+                text-decoration: underline;
+                font-weight: bolder;
+                margin-top: 20px;
+             }
+            
+        </style>
+    </head>
+    <body>
+        <h2 class="title">Car Details</h2>
+        <div class="item">
+            <div class="item-info">
+                <div class="img-container">
+                    <img src="{{ car_data.img_url}}" alt="{{ car_data.name }}">
+                </div>
+                <div class="item-meta">
+                    <p class="name">{{ car_data.name }}</p>
+                    <h4 class="price"> Ksh {{ car_data.price}}</h4>
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

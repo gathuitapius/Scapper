@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test app</title>
+        <style>
+                        * {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                height: 200px;
+                border-radius: 20px;
+            }
+            .price {
+                font-weight: 700;
+                color: rgb(5, 98, 67);
+            }
+            .name {
+                font-weight: 500;
+            }
+             .item {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 40px;
+                width: 20%;
+             }
+
+             .item-info{
+                border: 1.9px solid wheat;
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                width: 100%;
+             }
+
+             .item-meta{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 5px;
+                justify-content: space-between;
+             }
+
+             .title{
+                text-align: center;
+                text-decoration: underline;
+                font-weight: bolder;
+                margin-top: 20px;
+             }
+             .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+             }
+
+             .link-it{
+                text-decoration: none;
+                padding: 0;
+                margin: 0;
+             }
+
+            
+        </style>
+    </head>
+    <body>
+        <h2>Cars</h2>
+        <div class="container">
+                {% for car_info in cars %}
+                <div class="item">
+                        <a href="http://127.0.0.1:5000/cars/{{ car_info[0] }}" class="link-it">
+                        <div class="item-info">
+                            <div class="img-container">
+                                <img src="{{ car_info[1]}}" alt="{{ car_info[2] }}">
+                            </div>
+                            <div class="item-meta">
+                                <p class="name">{{ car_info[2] }}</p>
+                                <h4 class="price"> Ksh {{ car_info[3]}}</h4>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                {% endfor %}
+        </div>
+    </body>
+</html>
+
+
