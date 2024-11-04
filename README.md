@@ -30,7 +30,7 @@ A Flask application that scrapes car listings from Jiji Kenya, stores them in a 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/car-scraper-viewer.git
+git clone https://github.com/gathuitapius/Scraper.git
 cd car-scraper-viewer
 ```
 
@@ -89,10 +89,3 @@ Contributions are welcome! Please follow these steps:
 ## License
 
 This project is licensed under the MIT License.
-```
-
-### Notes:
-- **Update URLs**: Remember to replace `https://github.com/yourusername/car-scraper-viewer.git` with the actual URL of your Git repository.
-- **Adjust Instructions**: Customize any instructions related to your setup, if necessary.
-
-This README format should be GitHub-ready and easy for users and contributors to understand!
